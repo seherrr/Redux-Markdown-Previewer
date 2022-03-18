@@ -1,0 +1,101 @@
+body {
+  font-family: sans-serif;
+  background-color: #f98c7d;
+}
+h1 {
+  text-align: center;
+}
+.componnets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.output-text {
+  width: 200px;
+  height: 360px;
+  border: 0.5px solid black;
+  margin-left: 1em;
+}
+.area {
+  display: flex;
+}
+.input-area {
+  margin-left: 2em;
+}
+.show-btn {
+  margin-left: 40em;
+}
+span {
+  margin-top: 1em;
+}
+.input-area textarea {
+  margin-top: 2.5em;
+  margin-left: -9.5em;
+  width: 380px;
+  height: 540px;
+  resize: none;
+  overflow: auto;
+  outline: none;
+  font-size: 16px;
+  padding: 0.7em;
+  background-color: #fff;
+}
+.output-area .output-text {
+  margin-top: 2.5em;
+  background-color: #fff;
+  width: 380px;
+  height: 560px;
+  margin-left: -6em;
+  padding-left: 0.8em;
+  overflow: auto;
+}
+.output-area {
+  margin-left: 3em;
+}
+.show-btn button {
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 10px;
+  border-color: transparent;
+  cursor: pointer;
+  margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+  .componnets {
+    flex-wrap: wrap;
+  }
+  .show-btn button {
+    margin-left: -33em;
+  }
+  .output-area .output-text {
+    margin-top: 2.5em;
+    background-color: #fff;
+    width: 280px;
+    height: 500px;
+    margin-left: -6em;
+    padding-left: 0.8em;
+  }
+  .input-area textarea {
+    margin-top: 2.5em;
+    margin-left: -9.5em;
+    width: 260px;
+    height: 500px;
+  }
+  .output-area {
+    margin-left: 0;
+  }
+  .input-area {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1023px) {
+  .componnets {
+    flex-wrap: wrap;
+  }
+  .show-btn button {
+    margin-left: -10em;
+  }
+  .input-area {
+    margin-left: 3.5em;
+  }
+}
